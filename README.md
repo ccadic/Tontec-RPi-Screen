@@ -52,10 +52,19 @@ Save the file, and...
 
 ### Set to Run on Startup
 
-    cp ~/mzl350i-pi-ext/lcd /etc/init.d
-    cd /etc/init.d
-    chmod +x lcd
-    update-rc.d lcd defaults
+    crontab -e
+
+Add:
+
+    @reboot /home/pi/mzl350i-pi-ext/lcd
+
+Edit:
+
+    nano /etc/rc.local
+    
+Add on a line before "exit 0":
+
+    DISPLAY=:0
 
 ## Terminal
 
