@@ -35,9 +35,8 @@ To:
     cd /home/pi
     wget https://s3.amazonaws.com/ttbox/35screen.zip
     unzip 35screen.zip
-    cd 35screen
     unzip mzl350i-pi-ext.zip
-    mv mzl350i-pi-ext /home/pi/mzl350i-pi-ext
+    rm 35screen.zip mzl350i-pi-ext.zip
 
 ### Edit Driver Config
 
@@ -46,11 +45,11 @@ To:
 
 Change:
 
-    loadFrameBuffer_diff_960640();
+    int xsize=960, ysize=640
   
 To:
 
-    loadFrameBuffer_diff_480320();
+    int xsize=480, ysize=320
 
 Save the file, and...
 
@@ -58,6 +57,7 @@ Save the file, and...
 
 ### Set to Run on Startup
 
+    chmod +x /home/pi/mzl350i-pi-ext/lcd
     crontab -e
     
 Add:
@@ -70,7 +70,11 @@ Add:
 
     nano /etc/default/console-setup
 
-Set
+Change:
+
+    FONTSIZE=""
+    
+To:
 
     FONTSIZE="20x10"
 
