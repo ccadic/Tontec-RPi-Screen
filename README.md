@@ -32,7 +32,7 @@ To:
 
 ### Get Driver
 
-    cd /home/pi
+    cd ~/
     wget https://s3.amazonaws.com/ttbox/35screen.zip
     unzip 35screen.zip
     unzip mzl350i-pi-ext.zip
@@ -40,7 +40,7 @@ To:
 
 ### Edit Driver Config
 
-    cd /home/pi/mzl350i-pi-ext/src
+    cd ~/mzl350i-pi-ext/src
     mv mzl350i.c mzl350i.c.old
     nano mzl350i.c
 
@@ -52,12 +52,10 @@ Save the file, and...
 
 ### Set to Run on Startup
 
-    chmod +x /home/pi/mzl350i-pi-ext/lcd
-    crontab -e
-    
-Add:
-
-    @reboot /home/pi/mzl350i-pi-ext/lcd
+    cp ~/mzl350i-pi-ext/lcd /etc/init.d
+    cd /etc/init.d
+    chmod +x lcd
+    update-rc.d lcd defaults
 
 ## Terminal
 
