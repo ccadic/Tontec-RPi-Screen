@@ -5,7 +5,7 @@ How to set up a Tontec screen on a Raspberry Pi. I used [this screen on Amazon](
 
 All of these commands assume sudo/root.
 
-# Basic SWAG POS Setup
+# Setup
 
 ## System
 
