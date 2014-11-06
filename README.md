@@ -86,5 +86,20 @@ Add:
 
     logo.nologo
 
+### Automatically Log In (Optional)
+
+    nano /etc/inittab
+
+Change:
+
+    1:2345:respawn:/sbin/getty --noclear 38400 tty1
+
+To:
+
+    1:2345:respawn:/bin/login -f pi tty1 </dev/tty1 >/dev/tty1 2>&1
+
+Edit
+
+    nano /etc/profile
 
 It takes a while for it to turn on with the screen. Apparently the screen takes a bit of resources... But works like a charm for me once on. I boot it to terminal and run console programs on these displays.
