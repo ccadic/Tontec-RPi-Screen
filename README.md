@@ -61,9 +61,6 @@ Save the file, and...
     crontab -e
     @reboot /home/pi/mzl350i-pi-ext/lcd
 
-[Source](http://www.raspberrypi.org/forums/viewtopic.php?f=91&t=81022&p=600832&hilit=mzl350i#p600832)
-
-
 ## Terminal
 
 ### Set Font Size (Optional)
@@ -73,8 +70,6 @@ Save the file, and...
 Set
 
     FONTSIZE="20x10"
-    
-[Source](http://unix.stackexchange.com/questions/49779/can-i-change-the-font-of-terminal)
 
 ### Disable Raspberry Logo (Optional)
 
@@ -84,4 +79,5 @@ Set
 
     logo.nologo
 
-[Source](http://www.raspberrypi.org/forums/viewtopic.php?f=31&t=11642)
+
+It takes a while for it to turn on with the screen. Apparently the screen takse a bit of resources, plus having to run the extra material... But works like a charm. I boot it to terminal and run console programs on these displays, but you can try the touchscreen if that's your fancy. 
