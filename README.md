@@ -93,8 +93,9 @@ To:
 
     1:2345:respawn:/bin/login -f pi tty1 </dev/tty1 >/dev/tty1 2>&1
 
-Edit
 
-    nano /etc/profile
+
+And you're done! Rebooting should cough it out to a command prompt.
+
 
 It takes a while for it to turn on with the screen. Apparently the screen takes a bit of resources... But works like a charm for me once on. I boot it to terminal and run console programs on these displays.
