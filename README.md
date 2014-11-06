@@ -41,15 +41,10 @@ To:
 ### Edit Driver Config
 
     cd /home/pi/mzl350i-pi-ext/src
+    mv mzl350i.c mzl350i.c.old
     nano mzl350i.c
 
-Change:
-
-    int xsize=960, ysize=640
-  
-To:
-
-    int xsize=480, ysize=320
+Paste the contents of [this](https://github.com/33mhz/Tontec-RPi-Screen/blob/master/mzl350i.c).
 
 Save the file, and...
 
