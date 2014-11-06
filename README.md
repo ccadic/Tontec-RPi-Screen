@@ -3,7 +3,7 @@ Tontec-RPi-Screen
 
 How to set up a Tontec screen on a Raspberry Pi. I used [this screen on Amazon](http://www.amazon.com/gp/product/B00LN9MYCO).
 
-All of these commands assume sudo/root.
+All of these commands assume sudo/root. Very basic Linux terminology/usage expected.
 
 # Setup
 
@@ -35,7 +35,7 @@ To:
     cd /home/pi
     wget https://s3.amazonaws.com/ttbox/35screen.zip
     unzip 35screen.zip
-    cd 35screen.zip
+    cd 35screen
     unzip mzl350i-pi-ext.zip
     mv mzl350i-pi-ext /home/pi/mzl350i-pi-ext
 
@@ -59,6 +59,9 @@ Save the file, and...
 ### Set to Run on Startup
 
     crontab -e
+    
+Add:
+
     @reboot /home/pi/mzl350i-pi-ext/lcd
 
 ## Terminal
@@ -80,4 +83,4 @@ Set
     logo.nologo
 
 
-It takes a while for it to turn on with the screen. Apparently the screen takse a bit of resources, plus having to run the extra material... But works like a charm. I boot it to terminal and run console programs on these displays, but you can try the touchscreen if that's your fancy. 
+It takes a while for it to turn on with the screen. Apparently the screen takes a bit of resources... But works like a charm for me once on. I boot it to terminal and run console programs on these displays.
