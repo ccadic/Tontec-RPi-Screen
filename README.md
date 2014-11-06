@@ -82,7 +82,7 @@ To:
 
     nano /boot/cmdline.txt
 
-Set
+Add:
 
     logo.nologo
 
