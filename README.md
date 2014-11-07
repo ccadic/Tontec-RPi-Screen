@@ -58,14 +58,6 @@ Add:
 
     @reboot /home/pi/mzl350i-pi-ext/lcd
 
-Edit:
-
-    nano /etc/rc.local
-    
-Add on a line before "exit 0":
-
-    DISPLAY=:0
-
 ## Terminal
 
 ### Set Font Size (Optional)
