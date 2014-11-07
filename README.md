@@ -57,6 +57,8 @@ Save the file, and...
 Add:
 
     @reboot /home/pi/mzl350i-pi-ext/lcd
+    
+Note: For whatever reason, it would not work if I followed their procedure with the script in /etc/init.d, and this does work.
 
 ## Terminal
 
