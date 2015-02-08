@@ -60,19 +60,27 @@ Add:
     
 Note: For whatever reason, it would not work if I followed their procedure with the script in /etc/init.d, and this does work.
 
+### Prevent Screen From Timing Out (Optional)
+
+    nano /etc/kbd/config
+
+SET:
+
+    BLANK_TIME=0
+    
+    POWERDOWN_TIME=0
+
 ## Terminal
 
 ### Set Font Size (Optional)
 
-    nano /etc/default/console-setup
+    sudo dpkg-reconfigure console-setup
 
-Change:
+    CHARMAP="UTF-8"
 
-    FONTSIZE=""
-    
-To:
-
-    FONTSIZE="20x10"
+    CODESET="Uni2"
+    FONTFACE="Terminus"
+    FONTSIZE="14x28"
 
 ### Disable Raspberry Logo (Optional)
 
